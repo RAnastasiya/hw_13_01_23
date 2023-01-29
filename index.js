@@ -32,6 +32,7 @@ function Proto (){
         if(amountValue > this.remainder){
             return null;
         }
+        this.remainder -= amountValue;
         return amountValue * this.price;
     }
 }
@@ -54,3 +55,4 @@ console.log(product);
 console.log(product.showInfo());
 console.log(product.setSaleToPrice(5));
 console.log(product.buyAmountProduct(10));
+console.log(product);
